@@ -1,0 +1,353 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #0f0c29 0%,
+        #302b63 50%,
+        #24243e 100%
+    );
+    background-attachment: fixed;
+    color: #f8fafc;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.site-header {
+    width: calc(100% - 50px);
+    margin: 25px auto 0;
+    padding: 40px 25px 25px;
+    text-align: center;
+    background: rgba(15, 12, 41, 0.70);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    box-shadow:0 8px 32px rgba(0, 0, 0, 0.30);
+}
+
+/* Restaurant name */
+.site-header h1 {
+    color: #f8fafc;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+/* Tagline */
+.tagline {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 22px;
+    margin: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background: rgba(168, 85, 247, 0.25);
+    transform: translateY(-3px);
+    border-color: #a855f7;
+}
+
+/* =========================================
+   MAIN and SECTION
+   ========================================= */
+
+main {
+    width: calc(100% - 50px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-section {
+    padding: 70px 0 30px;
+}
+
+/* Section heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    color: #ffffff;
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #cbd5e1;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MENU CATEGORY
+   ========================================= */
+
+.menu-category {
+    margin-bottom: 55px;
+}
+
+.menu-category h3 {
+    text-align: center;
+    color: #a855f7;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   MENU GRID
+   ========================================= */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* =========================================
+   MENU CARD
+   ========================================= */
+
+.menu-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover */
+.menu-card:hover {
+    transform: translateY(-8px);
+    border-color: #a855f7;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.40);
+}
+
+
+/* =========================================
+   CARD HEADER and PRICE
+   ========================================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.card-header h4 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+/* Price */
+.price {
+    color: #22c55e;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Description */
+.menu-card p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   ABOUT US
+   ========================================= */
+
+.about-section { padding: 40px 0 70px; }
+.about-card p:last-child { margin-bottom: 0; }
+.about-card strong { color: #ffffff; }
+
+.about-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30);
+    text-align: center;
+}
+
+.about-card h2 {
+    color: #a855f7;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+    margin-top: 30px;
+    padding: 45px 25px 20px;
+    background: rgba(15, 12, 41, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow:
+        0 -8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer container */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+/* Footer columns */
+.footer-column {
+    padding: 15px;
+}
+
+.footer-column h3 {
+    color: #a855f7;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.footer-column p {
+    color: #cbd5e1;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    text-align: center;
+}
+
+.copyright p {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+    
+    .footer-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        width: calc(100% - 25px);
+        margin-top: 12px;
+        padding: 30px 15px 20px;
+    }
+
+    .site-header h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .menu-card {
+        margin: 3px;
+        padding: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .tagline { font-size: 0.85rem; }
+    main { width: calc(100% - 25px); }
+    .menu-section { padding-top: 45px; }
+    .section-heading h2 { font-size: 1.9rem; }    
+    .about-card { padding: 25px 20px; }
+}
+
